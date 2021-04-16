@@ -1,0 +1,186 @@
+/* Reglas por defecto */
+
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Encabezado*/
+
+#header {
+    background-color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#header h1 {
+    color: rgb(0, 139, 139);
+    font-size: 5vw;
+}
+
+#header h2 {
+    font-size: 1.9vw;
+}
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+
+/* Primera sección  */
+
+#section-1 {
+    background-color: #f5eef5;
+}
+
+#section-1 p {
+    font-size: 4vw;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+
+/* Segunda  sección */
+
+#section-2 {
+    background-color: #faf5f3;
+}
+
+
+/* Tercera sección */
+
+#section-3 {
+    background-color: #F2F9F8;
+}
+
+
+/*Pie de página */
+
+#section-4 {
+    background-color: black;
+    color: white;
+    padding-top: 5%;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.column-4 h3 {
+    font-size: 100%;
+}
+
+.column-1 h1 {
+    font-size: 25px;
+}
+
+.column-4 p {
+    font-size: 1vw;
+}
+
+
+/* Estilo de los texto y imagen */
+
+.estilo h1 {
+    font-size: 4vw;
+    color: grey;
+}
+
+.estilo h2 {
+    font-size: 3vw;
+    padding-bottom: 4%;
+}
+
+.estilo h3 {
+    font-size: 2vw;
+    padding-top: 4%;
+}
+
+.estilo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Reglas Auxiliares */
+
+.relleno-lateral {
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Rimg {
+    padding: 4%;
+}
+
+
+/*PARA DISPOSITIVOS MOVILES  */
+
+@media screen and (max-width: 700px) {
+    /*ENCABEZADO */
+    #header h1 {
+        font-size: 9vw;
+    }
+    #header h2 {
+        font-size: 4vw;
+    }
+    /*SECCION 1,2,3*/
+    .column-2 {
+        width: 100%;
+    }
+    /*PIE DE PÁGINA*/
+    .column-4 {
+        width: 50%;
+    }
+    .column-4 h3 {
+        font-size: 3vw;
+    }
+    .column-1 h1 {
+        font-size: 25px;
+    }
+    .column-4 p {
+        font-size: 2vw;
+    }
+    /*ESTILOS DE TEXTO Y IMAGEN*/
+    .estilo h1 {
+        font-size: 6vw;
+    }
+    .estilo h2 {
+        font-size: 5vw;
+    }
+    .estilo h3 {
+        font-size: 4vw;
+    }
+    /*REGLAS AUXILIARES */
+    .flex {
+        display: block;
+    }
+}
